@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<GridPane fx:controller="GUI.ChatbotController"
+          xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center"
+          hgap="10" vgap="10">
+
+    <Label text="AI Chatbot" GridPane.columnIndex="0" GridPane.rowIndex="0" style="-fx-font-size: 18px;"/>
+
+    <TextArea fx:id="chatArea" GridPane.columnIndex="0" GridPane.rowIndex="1" prefHeight="300" prefWidth="400" wrapText="true"/>
+
+    <TextField fx:id="userInput" GridPane.columnIndex="0" GridPane.rowIndex="2" promptText="Type your question..."/>
+
+    <Button text="Send" onAction="#sendMessage" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+</GridPane>
